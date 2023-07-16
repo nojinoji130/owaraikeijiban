@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<div class="container">
+    		<div class="starter-template">
+    			<h1>お笑い専門サイト</h1>
+    			<p class="lead">こんにちは</p>
+    			<img class="img-responsive center-block" src="https://FM842mnshagaki.github.io/radio70/漫才師イラスト.jpg" width="300" height="50">
+    			
+            </div>
+        </div>
+   <div class="container">
+    		<div class="starter-template">
+    			
+    <style>
+        #image {
+            width: 20%;
+            height: auto;
+        }
+
+        .brush-font {
+            font-family: 'Your-Brush-Font', cursive;
+        }
+
+        .custom-font {
+            font-size: 100px;
+        }
+
+        /* 新しいスタイル */
+        .custom-text {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!-- Bootstrap -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    	<style>
+    		body {
+    			padding-top: 50px;
+    			background-color: white;
+    		}
+    		.starter-template {
+    			padding: 40px 15px;
+    			background-color: white;
+    		}
+    	</style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        		<div class="container">
+        			<div class="navbar-header">
+        				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        					<span class="sr-only">Toggle navigation</span>
+        					
+        				</button>
+        				
+        			</div>
+        			<div id="navbar" class="collapse navbar-collapse">
+        				<ul class="nav navbar-nav">
+						<li><a href="https://FM842mnshagaki.github.io/radio70/index.html">home</a></li>
+        					<li class="active"><a href="https://FM842mnshagaki.github.io/radio70/お笑いラジオメールアドレス.html">ラジオメールアドレス</a></li>
+        					<li><a href="https://FM842mnshagaki.github.io/radio70/大喜利.html">大喜利</a></li>
+                            <li><a href="https://FM842mnshagaki.github.io/radio70/性格診断2.html">似ている芸人診断サイト</a></li>
+        				</ul>
+        			</div>
+        		</div>
+        	</nav>
+    <h1 style="font-size: 30px;">今日の芸人の名言</h1>
+
+    <div>
+        <p id="text"></p>
+        
+    </div>
+
+    <script>
+        // 文章と写真のリスト
+        const items = [
+            {
+                text: "自分の機嫌は自分で取る。人に取ってもらおうとしない。（みやぞん）",
+               
+            },
+            {
+                text: "やさしさを持った人は、それ以上の悲しみを持っている。（明石家さんま）",
+                 
+            },
+            {
+                text: "「こうじゃなきゃ」を捨てれば自分に合った場所は見つかる。（フワちゃん）",
+                
+            },
+            {
+                text: "言葉遣いは無料でできるオシャレ。（カズレーザー）",
+                
+            },
+            {
+                text: "最初は、裏付けのない自信と夢しかないんですよ。（上田晋也）",
+                 
+            },
+            {
+                text: "一生懸命頑張っていれば、時間がかかるかもしれないけど、きっと誰かが見ていてくれるから。（出川哲郎）",
+                
+            },
+            {
+                text: "100点は無理かもしれん。でもMAXなら出せるやろ。（松本人志）",
+              
+            },
+            {
+                text: "やらなきゃいけないのは、まずやること。（中田敦彦）",
+             
+            },
+            {
+                text: "自分が好きなことがわかると、他人の好きなことも尊重できる（若林正恭）",
+               
+            },
+            {
+                text: "「サボったらオレは終わる」っていう危機感をいつも持っています。（山里亮太）",
+               
+            },
+            {
+                text: "批判は割と簡単だ。だって完璧なものってこの世にはないから。（若林正恭）",
+                
+            },
+            {
+                text: "やらない理由なんて無限にある。やる理由はあまりない。それでもやるんだよ。（有吉弘行）",
+            
+            },
+            {
+                text: "転ばぬ先の杖？そんな物へし折ってくれるわ！（若林正恭）",
+               
+            },
+            {
+                text: "ネガティブな人が人生を生き抜くためには、没頭できる仕事や趣味は命綱と同等の価値がある。（若林正恭）",
+               
+            },
+            {
+                text: "努力する道を選ぶほうがかっこいい。（なかやまきんに君）",
+              
+            },
+            {
+                text: "抹茶オレを飲みました。マッチョオレ　俺マッチョ（なかやまきんに君）",
+              
+            },
+            {
+                text: "（吉本興業退社の理由は？）より面白くなるために、裸一貫で退社いたしました。まさに、裸の大将！ 裸の大将！ パワー！（なかやまきんに君）",
+              
+            },
+            {
+                text: "僕は朝の「プロテイン」は一番大切だと言いたい（なかやまきんに君）",
+                
+            }
+        ];
+
+        // ページ読み込み時の処理
+        window.addEventListener('load', function () {
+            // ランダムな項目を選択
+            const randomItem = items[Math.floor(Math.random() * items.length)];
+
+            // 文章を表示
+            const textElement = document.getElementById("text");
+            textElement.innerHTML = randomItem.text;
+
+            // 写真を表示
+            const imageElement = document.getElementById("image");
+            imageElement.src = randomItem.image;
+            imageElement.alt = randomItem.text;
+        });
+    </script>
+</body>
+</html>
+<a class="btn btn-primary" href="#">ページ上部へ</a>
+            	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>診断結果</title>
+
+</head>
+   <style>
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+<body>
+  <h1>診断結果</h1>
+ <div id="result"></div>
+
+
+
+  <script>
+    // URLからクエリパラメータを取得
+    var urlParams = new URLSearchParams(window.location.search);
+    var personalityType = urlParams.get("personality");
+
+    // 結果の表示
+    var resultElement = document.getElementById('result');
+    resultElement.innerHTML = "あなたに似ている芸人は「" + personalityType + "」です。";
+    var urlParams = new URLSearchParams(window.location.search);
+  var personalityType = urlParams.get("personality");
+
+
+  // 画像の表示
+  var personalityImage = document.getElementById('personalityImage');
+  var imagePath = ""; // 画像のパス（各パーソナリティに対応する画像のパスを指定してください）
+  
+  // 各パーソナリティに対応する画像パスの設定
+  switch (personalityType) {
+    case "錦鯉の長谷川まさのり":
+     
+      break;
+    case "とにかく明るい安村":
+     
+      break;
+    case "チョコレートプラネットの松尾":
+     
+      break;
+    case "NON STYLEの井上":
+      
+      break;
+       case "ラランドサーヤ":
+     
+      break;
+       case "マヂカルラブリーの野田クリスタル":
+      
+      break;
+       case "バカリズム":
+     
+      break;
+       case "南海キャンディーズの山里亮太":
+      
+      break;
+       case "オードリーの若林":
+     
+      break;
+       case "和牛の水田":
+      
+      break;
+  }
+
+ 
+</script>
+
+
+
+ 
+</body>
+</html>
